@@ -34,10 +34,15 @@ body {
 }
 
 .banner {
-    background: url('images/banner-image.jpeg') center/contain no-repeat;
+    background: url('images/banner-image.jpeg') center/cover no-repeat;
     color: white;
     text-align: center;
     padding: 100px 20px;
+    height: 300px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .banner h1 {
