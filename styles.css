@@ -32,3 +32,15 @@ body {
 .nav-menu a:hover {
     color: #00bcd4;
 }
+
+.banner {
+    background: url('banner-image.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.banner h1 {
+    font-size: 3em;
+    margin: 0;
+}
