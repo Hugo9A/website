@@ -34,7 +34,7 @@ body {
 }
 
 .banner {
-    background: url('banner-image.jpg') center/cover no-repeat;
+    background: url('images/banner-image.jpeg') center/cover no-repeat;
     color: white;
     text-align: center;
     padding: 100px 20px;
