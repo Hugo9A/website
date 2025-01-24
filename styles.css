@@ -8,12 +8,30 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    height: 55px;
     z-index: 1000;
     display: flex;
-    justify-content: center;
-    padding: 10px 0;
+    align-items: center;
+    justify-content: space-between; /* Space between logo and nav menu */
+    padding: 0 20px; /* Adjust padding */
     transition: background-color 0.3s ease;
 }
+
+.navbar-logo {
+    height: 35px;
+    transform: scale(4);
+    margin-left: 20px; /* Add space to push the logo to the right */
+}
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the nav icons */
+    flex-grow: 1; /* Allow nav menu to take up space for centering */
+}
+
 
 .navbar:hover {
     background-color: rgba(255, 255, 255, 0.9); /* Fully visible on hover */
@@ -24,12 +42,6 @@ body {
 }
 
 
-.nav-menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
 
 .nav-menu li {
     margin: 0 15px;
