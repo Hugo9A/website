@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ralph Lauren</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
 </head>
 <body>
     <header>
@@ -13,19 +15,89 @@
             
             <ul class="nav-menu">
                 
-                <li><a href="#home">Home</a></li>
-                <li><a href="#men">Men</a></li>
-                <li><a href="#woman">Women</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" onclick="showPage('home')">Home</a></li>
+                <li><a href="#men" onclick="showPage('men')">Men</a></li>
+                <li><a href="#woman" onclick="showPage('woman')">Women</a></li>
+                <li><a href="#about" onclick="showPage('about')">About</a></li>
+                <li><a href="#faq" onclick="showPage('faq')">FAQ</a></li>
+                <li><a href="#contact" onclick="showPage('contact')">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section id="home">
+    <div id="home" class="page">
         <div class="banner">
-            <h1>Welcome to Our Website</h1>
+            <h1>Ralph Lauren</h1>
+            <p>POLO</p>
         </div>
-    </section>
+    </div>
+    <div id="men" class="page">
+        <div class="banner">
+            <h1>Men's Collection</h1>
+            <p>Explore the latest in men's fashion.</p>
+        </div>
+    
+    </div>
+
+    <div id="woman" class="page">
+        <div class="banner">
+            <h1>Men's Collection</h1>
+            <p>Explore the latest in men's fashion.</p>
+        </div>
+    </div>
+
+    <div id="about" class="page">
+        <div class="banner">
+            <h1>About us</h1>
+            
+        </div>
+    </div>
+
+    <div id="faq" class="page">
+        <div class="banner">
+            <h1>FAQ</h1>
+
+        </div>
+    </div>
+
+    <div id="contact" class="page">
+        <div class="banner">
+            <h1>Contact us</h1>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-section">
+            <h3>About</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Account</h3>
+            <ul>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Check Order</a></li>
+                <li><a href="#">Personalize Your Experience</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Customer Service</h3>
+            <ul>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Returns & Exchanges</a></li>
+                <li><a href="#">Store Services</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Subscribe</h3>
+            <form class="subscription-form">
+                <input type="email" placeholder="Enter your email address">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </footer>
 </body>
 </html>
