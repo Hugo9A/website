@@ -1,26 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 body {
+
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
     margin: 0;
-    font-family: Arial, sans-serif;
+
+
 }
 
 .navbar {
-    background-color: rgba(51, 51, 51, 0); /* Fully transparent initially */
+    background-color: rgba(51, 51, 51, 0);
+    /* Fully transparent initially */
     position: fixed;
     top: 0;
     width: 100%;
-    height: 55px;
+    height: 60px;
     z-index: 1000;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Space between logo and nav menu */
-    padding: 0 20px; /* Adjust padding */
+    justify-content: space-between;
+    /* Space between logo and nav menu */
+    padding: 0 20px;
+    /* Adjust padding */
     transition: background-color 0.3s ease;
 }
 
 .navbar-logo {
     height: 35px;
     transform: scale(4);
-    margin-left: 20px; /* Add space to push the logo to the right */
+    margin-left: 20px;
+    filter: invert(100%);
+    transition: filter 0.3s ease;
+}
+
+.navbar:hover .navbar-logo {
+    filter: invert(0%);
 }
 
 .nav-menu {
@@ -28,29 +46,33 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Center the nav icons */
-    flex-grow: 1; /* Allow nav menu to take up space for centering */
+    justify-content: center;
+    /* Center the nav icons */
+    flex-grow: 1;
+    /* Allow nav menu to take up space for centering */
 }
 
 
 .navbar:hover {
-    background-color: rgba(255, 255, 255, 0.9); /* Fully visible on hover */
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Fully visible on hover */
 }
 
 .navbar:hover .nav-menu a {
-    color: black; /* Change text color to black on hover */
+    color: black;
+    /* Change text color to black on hover */
 }
 
 
 
 .nav-menu li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 .nav-menu a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     transition: color 0.3s ease;
 }
 
@@ -63,17 +85,33 @@ body {
     color: white;
     text-align: center;
     padding: 100px 20px;
-    height: 300px; /* Adjust height as needed */
+    height: 300px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow: hidden;
 }
 
 .banner h1 {
+    font-family: "Baskervville", serif;
+    font-weight: 600;
+    font-style: italic;
     font-size: 3em;
-    margin: 0;
+    margin-bottom: 10px;
 }
+
+.banner h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 0;
+}
+
 
 .footer {
     background-color: #f9f9f9;
@@ -139,22 +177,90 @@ body {
     background-color: #555;
 }
 
-
 .page {
     display: none;
 }
 
-.page h1, .page h2 {
+.page #home {
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.page h1,
+.page h2 {
     font-family: 'Arial', sans-serif;
 }
 
-p {
-    
-    font-size: 18px;
-    line-height: 1.5;
-}
-
-
 .page.active {
     display: block;
+}
+
+.carousel-section {
+    text-align: center;
+    max-width: 90%;
+    margin: auto;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 20px 0;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.card {
+    min-width: 300px;
+    max-width: 300px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 15px 0;
+    font-size: 1.2rem;
+}
+
+.page button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.page button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
 }
