@@ -1,23 +1,25 @@
 function showPage(pageId) {
-    const pages = document.querySelectorAll('.page');
-    pages.forEach(page => page.style.display = 'none');
+  const pages = document.querySelectorAll('.page');
+  pages.forEach(page => page.style.display = 'none');
 
-    const activePage = document.getElementById(pageId);
-    activePage.style.display = 'block';
+  const activePage = document.getElementById(pageId);
+  activePage.style.display = 'block';
 }
 
 window.onload = () => showPage('home');
 
 
-const prev = document.getElementById('prev-btn')
-const next = document.getElementById('next-btn')
-const list = document.getElementById('carousel-track')
-const itemWidth = 150
-const padding = 10
+const slidesContainer = document.querySelector(".carousel-container");
+const slide = document.querySelector(".card");
+const prevButton = document.getElementById("prev-btn");
+const nextButton = document.getElementById("next-btn");
 
-prev.addEventListener('click',()=>{
-  list.scrollLeft -= (itemWidth + padding)
-})
-next.addEventListener('click',()=>{
-  list.scrollLeft += (itemWidth + padding)
-})
+nextButton.addEventListener("click", () => {
+  const slideWidth = slide.clientWidth;
+  slidesContainer.scrollLeft += slideWidth;
+});
+
+prevButton.addEventListener("click", () => {
+  const slideWidth = slide.clientWidth;
+  slidesContainer.scrollLeft -= slideWidth;
+});

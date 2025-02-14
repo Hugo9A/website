@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ralph Lauren</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+
 
 </head>
+
 <body>
     <header>
         <nav class="navbar">
             <li><a href="#home"><img src="images/logo.png" alt="Logo" class="navbar-logo"></a></li>
-            
+
             <ul class="nav-menu">
-                
+
                 <li><a href="#home" onclick="showPage('home')">Home</a></li>
                 <li><a href="#men" onclick="showPage('men')">Men</a></li>
                 <li><a href="#woman" onclick="showPage('woman')">Women</a></li>
@@ -33,35 +35,39 @@
             <h2>More to Explore</h2>
             <p>Explore seasonal collections, iconic accessories, and more.</p>
             <div class="carousel-container">
-              <button class="prev-btn">&#9664;</button>
-              <div class="carousel-track">
-                <div class="card">
-                  <img src="https://via.placeholder.com/300x400" alt="Collection">
-                  <h3>Collection</h3>
+                <button class="slide-arrow" id="prev-btn">&#9664;</button>
+                <div class="carousel-track">
+                    <li class="card">
+                        <img src="images/banner-image.jpeg" alt="Collection">
+                        <h3>Men's Collections</h3>
+                    </li>
+                    <li class="card">
+                        <img src="images/women.png" alt="Purple Label">
+                        <h3>Women's Collection</h3>
+                    </li>
+                    <li class="card">
+                        <img src="https://via.placeholder.com/300x400" alt="Accessories">
+                        <h3>Accessories</h3>
+                    </li>
+                    <li class="card">
+                        <img src="https://via.placeholder.com/300x400" alt="Seasonal Picks">
+                        <h3>Seasonal Picks</h3>
+                    </li>
+                    <li class="card">
+                        <img src="https://via.placeholder.com/300x400" alt="Seasonal Picks">
+                        <h3>Seasonal Picks</h3>
+                    </li>
                 </div>
-                <div class="card">
-                  <img src="https://via.placeholder.com/300x400" alt="Purple Label">
-                  <h3>Purple Label</h3>
-                </div>
-                <div class="card">
-                  <img src="https://via.placeholder.com/300x400" alt="Accessories">
-                  <h3>Accessories</h3>
-                </div>
-                <div class="card">
-                  <img src="https://via.placeholder.com/300x400" alt="Seasonal Picks">
-                  <h3>Seasonal Picks</h3>
-                </div>
-              </div>
-              <button class="next-btn">&#9654;</button>
+                <button class="slide-arrow" id="next-btn">&#9654;</button>
             </div>
-          </section>
+        </section>
     </div>
     <div id="men" class="page">
         <div class="banner">
             <h1>Men's Collection</h1>
             <p>Explore the latest in men's fashion.</p>
         </div>
-    
+
     </div>
 
     <div id="woman" class="page">
@@ -74,7 +80,7 @@
     <div id="about" class="page">
         <div class="banner">
             <h1>About us</h1>
-            
+
         </div>
     </div>
 
@@ -125,5 +131,7 @@
             </form>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
