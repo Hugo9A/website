@@ -1,25 +1,15 @@
-function showPage(pageId) {
-  const pages = document.querySelectorAll('.page');
-  pages.forEach(page => page.style.display = 'none');
+// Script for navigation bar
+const bar = document.getElementById("bar");
+const nav = document.getElementById("navbar");
+const close = document.getElementById("close")
 
-  const activePage = document.getElementById(pageId);
-  activePage.style.display = 'block';
+if (bar){
+    bar.addEventListener('click', () =>{
+        nav.classList.add('active');
+    })
 }
-
-window.onload = () => showPage('home');
-
-
-const slidesContainer = document.querySelector(".carousel-container");
-const slide = document.querySelector(".card");
-const prevButton = document.getElementById("prev-btn");
-const nextButton = document.getElementById("next-btn");
-
-nextButton.addEventListener("click", () => {
-  const slideWidth = slide.clientWidth;
-  slidesContainer.scrollLeft += slideWidth;
-});
-
-prevButton.addEventListener("click", () => {
-  const slideWidth = slide.clientWidth;
-  slidesContainer.scrollLeft -= slideWidth;
-});
+if (close){
+    close.addEventListener('click', () =>{
+        nav.classList.remove('active');
+    })
+}

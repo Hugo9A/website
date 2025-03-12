@@ -5,132 +5,399 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ralph Lauren</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
 
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <li><a href="#home"><img src="images/logo.png" alt="Logo" class="navbar-logo"></a></li>
+    <!-- NavBar Section Start  -->
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt="logo"></a>
 
-            <ul class="nav-menu">
-
-                <li><a href="#home" onclick="showPage('home')">Home</a></li>
-                <li><a href="#men" onclick="showPage('men')">Men</a></li>
-                <li><a href="#woman" onclick="showPage('woman')">Women</a></li>
-                <li><a href="#about" onclick="showPage('about')">About</a></li>
-                <li><a href="#faq" onclick="showPage('faq')">FAQ</a></li>
-                <li><a href="#contact" onclick="showPage('contact')">Contact</a></li>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
             </ul>
-        </nav>
-    </header>
-    <div id="home" class="page">
-        <div class="banner">
-            <h1>POLO</h1>
-            <p>Raulph Lauren</p>
         </div>
-        <section class="carousel-section">
-            <h2>More to Explore</h2>
-            <p>Explore seasonal collections, iconic accessories, and more.</p>
-            <div class="carousel-container">
-                <button class="slide-arrow" id="prev-btn">&#9664;</button>
-                <div class="carousel-track">
-                    <li class="card">
-                        <img src="images/banner-image.jpeg" alt="Collection">
-                        <h3>Men's Collections</h3>
-                    </li>
-                    <li class="card">
-                        <img src="images/women.png" alt="Purple Label">
-                        <h3>Women's Collection</h3>
-                    </li>
-                    <li class="card">
-                        <img src="https://via.placeholder.com/300x400" alt="Accessories">
-                        <h3>Accessories</h3>
-                    </li>
-                    <li class="card">
-                        <img src="https://via.placeholder.com/300x400" alt="Seasonal Picks">
-                        <h3>Seasonal Picks</h3>
-                    </li>
-                    <li class="card">
-                        <img src="https://via.placeholder.com/300x400" alt="Seasonal Picks">
-                        <h3>Seasonal Picks</h3>
-                    </li>
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <!-- Hero Section Start  -->
+    <section id="hero">
+        <h4>Trade-in-offer</h4>
+        <h2>Super Value Deals</h2>
+        <h1>On all Products</h1>
+        <p>Save more with coupans & up to 70% off</p>
+        <button onclick="window.location.href='shop.html'">Shop Now</button>
+    </section>
+
+    <!-- Feathure Section Start -->
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="img/features/f1.png" alt="f1">
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f2.png" alt="f1">
+            <h6>Online Order</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f3.png" alt="f1">
+            <h6>Save Money</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f4.png" alt="f1">
+            <h6>Promotions</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f5.png" alt="f1">
+            <h6>Happy Sell</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f6.png" alt="f1">
+            <h6>F24/7 Support</h6>
+        </div>
+    </section>
+
+    <!-- Product Section Start  -->
+
+    <!-- Product Section Start  -->
+
+    <section id="product1" class="section-p1">
+        <h2>Featured Products</h2>
+        <p>Ralph Lauren Summer Collection</p>
+        <div class="pro-container">
+            <div class="pro" onclick="window.location.href='Products (HTMLS)/rl1.html';">
+                <img src="img/products/rl1.jpg" alt="">
+                <div class="des">
+                    <span>Ralph Lauren</span>
+                    <h5>Classic Fit Mesh Polo Shirt</h5>
+                    <h4>SEK 1,499</h4>
                 </div>
-                <button class="slide-arrow" id="next-btn">&#9654;</button>
             </div>
-        </section>
-    </div>
-    <div id="men" class="page">
-        <div class="banner">
-            <h1>Men's Collection</h1>
-            <p>Explore the latest in men's fashion.</p>
+            <div class="pro" onclick="window.location.href='Products (HTMLS)/rl2.html';">
+                <img src="img/products/rl2.jpg" alt="">
+                <div class="des">
+                    <span>Ralph Lauren</span>
+                    <h5>Custom Slim Fit Striped Polo</h5>
+                    <h4>SEK 1,799</h4>
+                </div>
+            </div>
+            <div class="pro" onclick="window.location.href='Products (HTMLS)/rl3.html';">
+                <img src="img/products/rl3.jpg" alt="">
+                <div class="des">
+                    <span>Ralph Lauren</span>
+                    <h5>Iconic Oxford Shirt</h5>
+                    <h4>SEK 1,299</h4>
+                </div>
+            </div>
+            <div class="pro" onclick="window.location.href='Products (HTMLS)/rl4.html';">
+                <img src="img/products/rl4.jpg" alt="">
+                <div class="des">
+                    <span>Ralph Lauren</span>
+                    <h5>Classic Fit Linen Shirt</h5>
+                    <h4>SEK 2,199</h4>
+                </div>
+            </div>
+            <div class="pro" onclick="window.location.href='Products (HTMLS)/rl5.html';">
+                <img src="img/products/rl5.jpg" alt="">
+                <div class="des">
+                    <span>Ralph Lauren</span>
+                    <h5>Pima Cotton Cable-Knit Sweater</h5>
+                    <h4>SEK 2,499</h4>
+                </div>
+            </div>
+            <div class="pro" onclick="window.location.href='Products (HTMLS)/rl6.html';">
+                <img src="img/products/rl6.jpg" alt="">
+                <div class="des">
+                    <span>Ralph Lauren</span>
+                    <h5>Double-Knit Track Jacket</h5>
+                    <h4>SEK 3,299</h4>
+                </div>
+            </div>
+            <div class="pro" onclick="window.location.href='Products (HTMLS)/rl7.html';">
+                <img src="img/products/rl7.jpg" alt="">
+                <div class="des">
+                    <span>Ralph Lauren</span>
+                    <h5>Custom Fit Flag Sweatshirt</h5>
+                    <h4>SEK 2,799</h4>
+                </div>
+            </div>
+            <div class="pro" onclick="window.location.href='Products (HTMLS)/rl8.html';">
+                <img src="img/products/rl8.jpg" alt="">
+                <div class="des">
+                    <span>Ralph Lauren</span>
+                    <h5>Water-Repellent Down Jacket</h5>
+                    <h4>SEK 5,499</h4>
+                </div>
+            </div>
+            <div class="pro" onclick="window.location.href='Products (HTMLS)/rl9.html';">
+                <img src="img/products/rl9.jpg" alt="">
+                <div class="des">
+                    <span>Ralph Lauren</span>
+                    <h5>Performance Mesh Polo Shirt</h5>
+                    <h4>SEK 2,099</h4>
+                </div>
+            </div>
+            <div class="pro" onclick="window.location.href='Products (HTMLS)/rl10.html';">
+                <img src="img/products/rl10.jpg" alt="">
+                <div class="des">
+                    <span>Ralph Lauren</span>
+                    <h5>Fleece Hoodie with Logo</h5>
+                    <h4>SEK 2,699</h4>
+                </div>
+            </div>
+            <div class="pro" onclick="window.location.href='Products (HTMLS)/rl11.html';">
+                <img src="img/products/rl11.jpg" alt="">
+                <div class="des">
+                    <span>Ralph Lauren</span>
+                    <h5>Custom Fit Rugby Shirt</h5>
+                    <h4>SEK 2,199</h4>
+                </div>
+            </div>
+            <div class="pro" onclick="window.location.href='Products (HTMLS)/rl12.html';">
+                <img src="img/products/rl12.jpg" alt="">
+                <div class="des">
+                    <span>Ralph Lauren</span>
+                    <h5>Bear Fleece Sweatshirt</h5>
+                    <h4>SEK 3,499</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="banner" class="section-m1">
+        <h4>Repair Services</h4>
+        <h2>Up to <span>70% Off</span> & All t-Shirts & Accessories</h2>
+        <button>Explore More</button>
+    </section>
+
+
+
+    <section id="product1" class="section-p1">
+        <h2>New Arrivals</h2>
+        <p>Summer Collection New Modern Design</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="img/products/n1.jpg" alt="">
+                <div class="des">
+                    <span>Ralph Lauren</span>
+                    <h5>Classic Fit Mesh Polo Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>SEK 1,699</h4>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="img/products/n2.jpg" alt="">
+                <div class="des">
+                    <span>Ralph Lauren</span>
+                    <h5>Custom Slim Fit Striped Polo</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>SEK 2,199</h4>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="img/products/n3.jpg" alt="">
+                <div class="des">
+                    <span>Ralph Lauren</span>
+                    <h5>Iconic Oxford Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>SEK 1,499</h4>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="img/products/n4.jpg" alt="">
+                <div class="des">
+                    <span>Ralph Lauren</span>
+                    <h5>Classic Fit Linen Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>SEK 2,799</h4>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="img/products/n5.jpg" alt="">
+                <div class="des">
+                    <span>Ralph Lauren</span>
+                    <h5>Pima Cotton Cable-Knit Sweater</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>SEK 3,499</h4>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="img/products/n6.jpg" alt="">
+                <div class="des">
+                    <span>Ralph Lauren</span>
+                    <h5>Double-Knit Track Jacket</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>SEK 4,199</h4>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="img/products/n7.jpg" alt="">
+                <div class="des">
+                    <span>Ralph Lauren</span>
+                    <h5>Custom Fit Flag Sweatshirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>SEK 3,299</h4>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="img/products/n8.jpg" alt="">
+                <div class="des">
+                    <span>Ralph Lauren</span>
+                    <h5>Performance Mesh Polo Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>SEK 2,499</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="sm-banner" class="section-p1">
+        <div class="banner-box">
+            <h4>creazy deals</h4>
+            <h2>buy 1 get 1 free</h2>
+            <span>The best classic dress is on sale at cara</span>
+            <button class="white">Learn More</button>
+        </div>
+        <div class="banner-box banner-box2">
+            <h4>Spring / Summer</h4>
+            <h2>upcomming season</h2>
+            <span>The best classic dress is on sale at cara</span>
+            <button class="white" onclick="window.location.href='/upseason.html';">Collection</button>
+        </div>
+    </section>
+
+    <section id="banner3">
+        <div class="banner-box">
+            <h2>SEASONAL DEAL</h2>
+            <h3>Winter Collection -50% OFF</h3>
+        </div>
+        <div class="banner-box banner-box2">
+            <h2>SEASONAL DEAL</h2>
+            <h3>Spring / Summer 2024</h3>
+        </div>
+        <div class="banner-box banner-box3">
+            <h2>SEASONAL DEAL</h2>
+            <h3>New Trendy Prints</h3>
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get E-mail updates our latest shop and <span> Special Offers</span>.</p>
+        </div>
+        <div class="form">
+            <input type="email" placeholder="Your email address">
+            <button class="normal" onclick="SubmitEvent()">Sign Up</button>
+        </div>
+    </section>
+
+
+    <!-- Footer Section Start  -->
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logo.png" alt="">
+            <h4>Contact</h4>
+
+            <p><strong>Name :</strong> Hugo Sandqvist.</p>
+            <p><Strong>Address:</Strong> Anna Vasas Väg 5, 123 45 Stockholm. </p>
+            <p><Strong>Phone :</Strong> (+46) 72 501 1010. </p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
         </div>
 
-    </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="about.html">About us</a>
+            <a href="#">Delivery Information </a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms % Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart </a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Orders</a>
+            <a href="#">Help</a>
+        </div>
+        
 
-    <div id="woman" class="page">
-        <div class="banner">
-            <h1>Men's Collection</h1>
-            <p>Explore the latest in men's fashion.</p>
-        </div>
-    </div>
-
-    <div id="about" class="page">
-        <div class="banner">
-            <h1>About us</h1>
-
-        </div>
-    </div>
-
-    <div id="faq" class="page">
-        <div class="banner">
-            <h1>FAQ</h1>
-
-        </div>
-    </div>
-
-    <div id="contact" class="page">
-        <div class="banner">
-            <h1>Contact us</h1>
-        </div>
-    </div>
-    <footer class="footer">
-        <div class="footer-section">
-            <h3>About</h3>
-            <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Terms of Use</a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h3>Account</h3>
-            <ul>
-                <li><a href="#">My Account</a></li>
-                <li><a href="#">Check Order</a></li>
-                <li><a href="#">Personalize Your Experience</a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h3>Customer Service</h3>
-            <ul>
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Shipping</a></li>
-                <li><a href="#">Returns & Exchanges</a></li>
-                <li><a href="#">Store Services</a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h3>Subscribe</h3>
-            <form class="subscription-form">
-                <input type="email" placeholder="Enter your email address">
-                <button type="submit">Submit</button>
-            </form>
+        <div class="copyright">
+            <p>&#169;2024, Hugo Sandqvist - Ralph Lauren. </p>
         </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 
